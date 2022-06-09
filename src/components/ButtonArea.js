@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Button";
 
-const ButtonArea = () => {
+const ButtonArea = ({ handleOnClick }) => {
   const buttons = [
     {
       className: "item-1",
@@ -82,7 +82,12 @@ const ButtonArea = () => {
       <ul className="buttons">
         {buttons.map((item, i) => {
           return (
-            <Button key={i} className={item.className} label={item.label} />
+            <Button
+              handleOnClick={handleOnClick}
+              key={i}
+              className={item.className}
+              label={item.label}
+            />
           );
         })}
       </ul>

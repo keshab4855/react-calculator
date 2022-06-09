@@ -1,6 +1,6 @@
 import React from "react";
 
-const Display = () => {
+const Display = ({ str }) => {
   return (
     <div>
       {" "}
@@ -9,7 +9,7 @@ const Display = () => {
         type="text"
         id="inputext"
         placeholder="0.00"
-        value="0.00"
+        value={str || "0.00"}
       />
     </div>
   );
