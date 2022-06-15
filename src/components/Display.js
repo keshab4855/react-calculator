@@ -3,7 +3,7 @@ import React from "react";
 const Display = ({ str, isPrank }) => {
   const clsNm = isPrank ? "display prank" : "display";
   return (
-    <div className={clsNm}>
+    <div>
       {" "}
       <input
         className={`display-box ${clsNm}`}
