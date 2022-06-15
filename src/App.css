@@ -147,3 +147,27 @@ button {
   top: 540px;
   z-index: -1000;
 }
+
+.prank {
+  color: red;
+  font: bold;
+  animation: bounce 0.5s ease-in;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(10px);
+  }
+  30% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}

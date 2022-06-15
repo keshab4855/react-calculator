@@ -1,11 +1,12 @@
 import React from "react";
 
-const Display = ({ str }) => {
+const Display = ({ str, isPrank }) => {
+  const clsNm = isPrank ? "display prank" : "display";
   return (
-    <div>
+    <div className={clsNm}>
       {" "}
       <input
-        class="display-box"
+        className={`display-box ${clsNm}`}
         type="text"
         id="inputext"
         placeholder="0.00"
